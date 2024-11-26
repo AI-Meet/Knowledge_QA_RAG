@@ -1,0 +1,151 @@
+/*qa_css*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #696971FF 0%, #788090FF 100%); /* 渐变背景 */
+    background-size: cover;
+    color: #fff;
+}
+
+#chat-container {
+    width: 50%; /* 宽度为页面的一半 */
+    height: 80%; /* 高度为页面的 80% */
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px; /* 边角圆滑 */
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+    overflow: hidden;
+}
+
+#chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f8f8f8; /* 聊天框背景 */
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.message {
+    display: flex;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 75%;
+    align-items: center;
+    font-size: 16px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #0084ff;
+    color: white;
+    flex-direction: row-reverse;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #e5e5e5;
+    color: black;
+    flex-direction: row;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+#input-container {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#user-input:focus {
+    border-color: #0084ff; /* 聚焦时边框颜色变化 */
+    box-shadow: 0 0 5px rgba(0, 132, 255, 0.5); /* 聚焦时增加阴影效果 */
+}
+
+#send-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: #005bb5; /* 按钮悬停时的颜色 */
+    transform: scale(1.05); /* 悬停时轻微放大 */
+}
+
+.message-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.message-container-right {
+    justify-content: flex-end;
+}
+
+
+/*新添加的知识库按钮*/
+#kb-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#kb-actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #56a750; /* 默认绿色 */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+#kb-actions button:hover {
+    transform: scale(1.05); /* 悬停时轻微放大 */
+}
+
+#clear-knowledge {
+    background-color: #dc3545; /* 红色清空按钮 */
+}
+
+#clear-knowledge:hover {
+    background-color: #b22b37; /* 悬停时红色更深 */
+}

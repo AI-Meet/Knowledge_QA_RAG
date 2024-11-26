@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于知识库的文档问答系统</title>
+    <link rel="stylesheet" href="../static/css/qa_style.css">
+
+</head>
+<body>
+
+<div id="chat-container">
+    <div id="chat-box"></div>
+    <div id="input-container">
+        <input type="text" id="user-input" placeholder="请输入你的问题...">
+        <button id="send-button">发送</button>
+    </div>
+    <div>
+        <div id="kb-actions">
+            <button id="create-knowledge">创建知识库</button>
+            <button id="clear-knowledge">清空知识库</button>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/qa_script.js"></script>
+<script src="../static/js/kb_manager.js"></script>
+</body>
+</html>
