@@ -16,5 +16,10 @@ python main.py
 ```
 或
 ```
-uvicorn server:app --reload --host 0.0.0.0 --port 8000
+uvicorn server:app --reload --host 127.0.0.1 --port 8000
+```
+
+4. 访问页面: 在浏览器中输入下面url地址
+```
+http://127.0.0.1:8000/
 ```
