@@ -5,6 +5,7 @@
 
 本系统是在 Windows 11 上进行部署和运行的，关于milvus向量数据库的安装和启动可以参考以下步骤：
 1. 勾选`适用于Linux的Windows子系统`和`虚拟机平台`
+
 ![image](https://github.com/user-attachments/assets/32200acc-042e-48d0-a31c-ebc07511f963)
 
 2. 点击 `确定` 并重新启动计算机
@@ -29,6 +30,7 @@ wsl --update --web-download
 docker --version
 docker-compose --version
 ```
+
 ![a263610663c19d4046f28773a1126369](https://github.com/user-attachments/assets/1f8e801b-b2db-4644-83d7-5da10f4e5764)
 
 6. milvus向量数据库安装
@@ -38,9 +40,11 @@ docker-compose --version
 - 下载milvus
 进入下载页面：[https://github.com/milvus-io/milvus/releases](https://github.com/milvus-io/milvus/releases)
 选择milvus版本及其对应的yml文件，点击下载即可，如下：
+
 ![image](https://github.com/user-attachments/assets/5b8804ca-5c6b-4102-82ac-d47eee31c77b)
 
 - 将下载好的`milvus-standalone-docker-compose.yml`重命名为`docker-compose.yml`，并放入milvus文件中，如下：
+
 ![image](https://github.com/user-attachments/assets/037c6ecf-28a0-4569-ada0-7143a24ebfe0)
 
 - 在milvus文件夹中启动cmd命令，输入以下命令：
@@ -50,6 +54,7 @@ docker compose ps
 docker port milvus-standalone 19530/tcp
 ```
 运行结果如下：
+
 ![694be819cd99abc328136139f2e8e8d2](https://github.com/user-attachments/assets/2506153f-9625-42dd-b09c-db01e5ded5d6)
 
 ![1a3086ad4519524717991dffa47cce29](https://github.com/user-attachments/assets/a8e9a22c-2b1c-4c95-9e15-fe8d6cb0c3ee)
@@ -59,6 +64,7 @@ docker port milvus-standalone 19530/tcp
 7. Attu图形化界面安装
 下载地址：[https://github.com/zilliztech/attu/releases](https://github.com/zilliztech/attu/releases)
 选择对应的版本直接下载安装即可：
+
 ![image](https://github.com/user-attachments/assets/b4e96c46-e5e8-42e0-aae9-670008d3ff53)
 
 ## Usage
@@ -71,6 +77,7 @@ pip install -r requirements.txt
 ```
 
 2. 启动milvus数据库
+
 ![image](https://github.com/user-attachments/assets/4d2a37ad-3f74-4b72-969c-685c6b023e96)
 
 3. 启动系统服务
