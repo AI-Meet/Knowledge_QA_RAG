@@ -18,6 +18,7 @@ wsl --set-default-version 2
 wsl --update --web-download
 ```
 安装成功后的结果如下：
+
 ![abe944eb639649fae89175ed09af9fdd](https://github.com/user-attachments/assets/74fc0c97-cf3c-47c6-b3a2-240ba97a44ff)
 
 4. 下载安装docker-desktop
