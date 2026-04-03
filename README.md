@@ -97,3 +97,6 @@ uvicorn server:app --reload --host 127.0.0.1 --port 8000
 ```
 http://127.0.0.1:8000/
 ```
+
+项目演示示例：
+<iframe src="//player.bilibili.com/player.html?bvid=BV1a49KBqE7n&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
